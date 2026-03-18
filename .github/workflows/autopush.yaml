@@ -23,6 +23,9 @@ jobs:
             # Runs a single command using the runners shell
             - uses: actions/checkout@v3
 
+            - name: Make log.sh executable
+              run: chmod +x ./log.sh
+
             - name: Run a one-line script
               run: ./log.sh
               env:
