@@ -1,5 +1,8 @@
 name: Push upon self
 
+permissions:
+  contents: write
+
 on:
     # Triggers the workflow every 00:42 UTC
     schedule:

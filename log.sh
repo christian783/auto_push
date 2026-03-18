@@ -23,7 +23,7 @@ do
     printf "$i .. " >> log.txt
     git add .
     eval "git commit -m 'Automatic log - $today'"
-    git push origin main
+    git push https://x-access-token:${GIT_TOKEN}@github.com/christian783/auto_push.git main
 done
 
 
